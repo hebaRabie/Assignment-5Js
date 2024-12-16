@@ -1,0 +1,113 @@
+/* Start Gloubal */
+:root {
+  --bg-color: #1e202b;
+  --breadcrumb-bg-color: #262936;
+  --text-color: white;
+  --nav-link-color: white;
+  --nav-link-hover-color: #f8f9fa;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+a:hover {
+  color: var(--nav-link-hover-color);
+}
+
+/* End Global */
+
+/* Start Navbar */
+.site-content .site-header {
+  background-color: var(--bg-color) !important;
+}
+
+.navbar-nav .nav-link {
+  color: var(--nav-link-color) !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--nav-link-hover-color) !important;
+}
+
+/* Navbar Logo */
+.site-header .logo-imges img {
+  width: 64px;
+  height: 38px;
+}
+
+.site-header .logo-text h1 {
+  font-size: 1.5rem;
+}
+
+.site-header .logo-text small {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* End Navbar */
+
+/* Start Breadcrumb */
+.breadcrumb .container input {
+  color: var(--text-color);
+  background-color: var(--breadcrumb-bg-color);
+  border: none;
+  padding: 1rem;
+  font-size: 1.125rem;
+  width: 100%;
+}
+
+.breadcrumb .container input:disabled {
+  background-color: var(--breadcrumb-bg-color);
+}
+
+/* End Breadcrumb */
+
+/* Start Content Section */
+.content {
+  padding: 4rem 0;
+}
+
+.content .content-maps {
+  background-color: #333b47;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+
+.content .content-maps p {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+}
+
+.content .content-maps .fa {
+  font-size: 1.5rem;
+  color: var(--nav-link-hover-color);
+}
+
+/* End Content Section */
+
+/* Start Footer */
+footer {
+  background-color: var(--bg-color);
+  padding: 10px 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+/* End Footer */

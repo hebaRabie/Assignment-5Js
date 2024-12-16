@@ -1,0 +1,236 @@
+/* start NavBar */
+.site-content .site-header {
+  background-color: #1e202b !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url();
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  background-color: transparent;
+  border-radius: 15px;
+  outline: 3px solid #009ad8;
+  color: #009ad8 !important;
+  padding: 5px;
+}
+
+a:hover,
+a:active {
+  outline: 0;
+}
+/* end navbar */
+/* start Content */
+.contentInput {
+  background-image: url(../imges/banner.png),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: whitesmoke;
+}
+
+.contentInput .container {
+  position: relative;
+  width: 50%;
+}
+
+.contentInput input {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #1e202b;
+  color: whitesmoke;
+}
+
+.contentInput input::placeholder {
+  color: white;
+}
+
+.contentInput input:focus {
+  border: none !important;
+  outline: none !important;
+  background-color: #1e202b;
+}
+
+.contentInput .container button {
+  position: absolute;
+  right: 20px;
+  top: 7px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #009ad8;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contentInput .container button:hover {
+  background-color: #007bb5;
+}
+
+/* Weather Cards */
+.display-table {
+  margin-top: 20px;
+  padding: 20px;
+  width: 100%;
+}
+
+.display-table .container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.weather-card {
+  background-color: #1e202b;
+  color: whitesmoke;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 30%;
+}
+
+.weather-card span {
+  display: block;
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.weather-card .temp {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.weather-card .icon {
+  font-size: 40px;
+  margin: 10px 0;
+}
+/* start Content */
+
+/* Start Footer */
+.footer {
+  background-color: #262936;
+}
+.footer .footerConent .formInput input {
+background-color: #1E202B;
+outline: none;
+border: none;
+border-radius: 20px;
+}
+.footer .footerConent .formInput input:focus{
+  border: none !important;
+  outline: none !important;
+}
+.footer .footerConent .formInput input::placeholder{
+  color: whitesmoke;
+}
+.footer .footerConent .formInput{
+  position: relative;
+}
+.footer .footerConent .formInput button{
+  position: absolute;
+  top:10px;
+  right:10px;
+}
+/* End Footer */
+
+/* start Media Quare */
+/* للهواتف المحمولة */
+@media (max-width: 576px) {
+  .contentInput .container {
+    width: 90%;
+  }
+
+  .contentInput input {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .contentInput .container button {
+    position: absolute;
+    right: 5px;
+    top: 8px;
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .display-table .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .weather-card {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 1024px) {
+  .contentInput .container {
+    width: 70%;
+  }
+
+  .contentInput input {
+    padding: 14px;
+    font-size: 15px;
+  }
+
+  .contentInput .container button {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    padding: 9px 18px;
+    font-size: 15px;
+  }
+
+  .display-table .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .weather-card {
+    width: 30%;
+  }
+}
+
+@media (min-width: 700px) {
+  .contentInput .container {
+    width: 70%;
+  }
+
+  .contentInput input {
+    padding: 12px;
+    font-size: 18px;
+  }
+
+  .contentInput .container button {
+    position: absolute;
+    right: 20px;
+    top: 15%;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .display-table .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .weather-card {
+    width: 30%;
+  }
+}
+/* start Media Quare */
